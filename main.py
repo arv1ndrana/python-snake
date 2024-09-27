@@ -1,8 +1,8 @@
 from tkinter import *
 import random
 
-GAME_WIDTH = 800
-GAME_HEIGHT = 800
+GAME_WIDTH = 400
+GAME_HEIGHT = 400
 SPEED = 50
 SPACE_SIZE = 50
 BODY_PARTS = 3
@@ -37,5 +37,8 @@ score = 0
 direction = "down"
 label = Label(window, text = "Score: {}".format(score),font=("Liberation Mono",40))
 label.pack()
+
+canvas = Canvas(window, bg = BACKGROUND_COLOR, height = GAME_HEIGHT, width = GAME_WIDTH)
+canvas.pack()
 
 window.mainloop()
