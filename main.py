@@ -108,7 +108,8 @@ def check_collision(snake):
     return False
 
 def game_over():
-    pass
+    canvas.delete(ALL)
+    canvas.create_text(canvas.winfo_width()/2, canvas.winfo_height()/2,font=("Liberation Mono",15), text="GAME OVER", fill="red",tag="gameover")
 
 window = Tk()
 
